@@ -18,13 +18,15 @@ body {
 }
 
 .total_container { 
+    flex-direction: column;
+    justify-content: space-between;
+
     height: 100%;
     width: 80%;
     max-width: 1000px;
     margin: auto;
-
-    flex-direction: column;
-    justify-content: space-between;
+    border: solid 3px black;
+    border-radius: 3px;    
 }
 
 .container {
@@ -65,6 +67,9 @@ main {
     flex-grow: 1;
     background-color: white;
     overflow: auto;
+    -webkit-box-shadow: inset 1px 1px 5px 1px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    inset 1px 1px 5px 1px rgba(50, 50, 50, 0.75);
+    box-shadow:         inset 1px 1px 5px 1px rgba(50, 50, 50, 0.75);
 }
 
 /* your_name */
@@ -116,6 +121,7 @@ main {
 
 .lista_ingredienti li span {
     margin-right: 10px;
+    color: crimson;
     font-size: 12px;
     font-weight: bold;
 }
@@ -123,6 +129,62 @@ main {
 .lista_ingredienti li input {
     width: 20px;
     height: 20px;
+    
+}
+
+.lista_ingredienti li input[type="checkbox"] {
+    border: solid 1px black;
+    border-radius: 3px;
+    background-color: crimson;
+}
+
+/* discount */
+.discount {
+    margin-top: 25px;
+}
+
+.discount label {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.discount input {
+    font-size: 22px;
+    color: white;
+    background-color: orangered;
+    border: solid 2px white;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+.discount input:focus {
+    border: solid 2px black;
+}
+
+/* calcola */
+.calcola button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #fdbb40;
+    border: solid 2px orangered;
+    border-radius: 10px;
+    webkit-box-shadow: 1px 1px 6px 0px rgba(50, 50, 50, 0.50);
+    -moz-box-shadow: 1px 1px 6px 0px rgba(50, 50, 50, 0.50);
+    box-shadow: 1px 1px 6px 0px rgba(50, 50, 50, 0.50);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.calcola button:hover {
+    text-decoration: underline;
+    color: white;
+    background-color: orangered;
+    border: solid 2px black;
 }
 
 /* YOUR_PRICE */

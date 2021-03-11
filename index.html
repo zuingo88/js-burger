@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>panino</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
    
@@ -20,7 +21,7 @@
                 <!-- container -->
                 <div class="container">
 
-                    <h1>Crea il tuo burger!</h1>
+                    <h1 class="animate__animated animate__bounce">Crea il tuo burger!</h1>
                     <img src="img/burger.png" alt="">
 
                 </div> <!-- container -->
@@ -32,12 +33,14 @@
                 <!-- container -->
                 <div class="container">
 
+                    <!-- your_name -->
                     <div class="your_name">
                     
                         <input id="burger-name" type="text" placeholder="Dai un nome al tuo panino">
                     
                     </div>
 
+                    <!-- lista_ingredienti -->
                     <div class="lista_ingredienti">
 
                         <h3>Ingredienti</h3>
@@ -81,23 +84,29 @@
                             </li>
                         </ul>
 
+                    </div> <!-- lista_ingredienti -->
+
+                    <div class="discount">
+
+                        <label for="coupon">Inserisci Coupon</label>
+                        <input id="coupon" type="text" placeholder="Coupon">
+
+                    </div>
+
+                    <div class="calcola">
+
+                        <button id="calculate">Calcola prezzo</button>
+
                     </div>
                 
 
                     
                     
-                    <label for="coupon">Inserisci coupon</label>
-                    <input id="coupon" type="text" placeholder="Coupon">
                     
-                    <button id="calculate">Calcola prezzo</button>
                     
-                    <div>
                     
-                        <span>Prezzo: </span>
-                        <span id="price"></span>
-                        <span> €</span>
                     
-                    </div>
+                    
 
                 </div> <!-- container -->
                 
@@ -105,6 +114,13 @@
 
             <div class="your_price">
 
+                <div>
+                
+                    <span>Prezzo: </span>
+                    <span id="price"></span>
+                    <span> €</span>
+                
+                </div>
 
             </div>
 

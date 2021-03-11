@@ -11,7 +11,7 @@ for (var i = 0; i < lis.length; i++) {
         //seleziona e deseleziona al click
         var clickedLi = this; //elemento stesso selezionato
         var clickedLiChildrens = clickedLi.children; //figli di li
-        var clickedCheckbox = clickedLiChildrens[3]; //selezione figlio li (input)
+        var clickedCheckbox = clickedLiChildrens[4]; //selezione figlio li (input)
 
         clickedCheckbox.checked = !clickedCheckbox.checked; //deseleziono l'input selezionato 
     });
