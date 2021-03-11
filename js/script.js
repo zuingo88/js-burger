@@ -1,5 +1,5 @@
 
-//gestione click su li(ingredienti)
+//gestione click su li (ingredienti)
 var lis = document.getElementsByTagName('li');
 
 for (var i = 0; i < lis.length; i++) {
@@ -20,7 +20,7 @@ for (var i = 0; i < lis.length; i++) {
 }
 
 
-//CALCULATE
+//BOTTONE CALCOLA PREZZO #CALCULATE
 var priceBtn = document.getElementById('calculate');
 priceBtn.addEventListener('click', function() {
 
@@ -50,7 +50,7 @@ priceBtn.addEventListener('click', function() {
         }
 
         //gestione coupon
-        var coupons = [ 123, 456, 789 ]; //coupons ipotetici
+        var coupons = [ '123', '456', '789' ]; //coupons ipotetici
         var burgerCoupon = document.getElementById('coupon').value; //recupero coupon scritto in html
 
         if (coupons.includes(burgerCoupon)) { //se corrisponde fai lo sconto del 20%
