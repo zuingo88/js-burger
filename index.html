@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>panino</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   
+    <!-- screen -->
+    <div class="screen">
+
+        <!-- total_container -->
+        <div class="total_container flex">
+
+            <header>
+                
+                <!-- container -->
+                <div class="container">
+
+                    <h1>Crea il tuo burger!</h1>
+                    <img src="img/burger.png" alt="">
+
+                </div> <!-- container -->
+
+            </header>
+
+            <main>
+
+                <!-- container -->
+                <div class="container">
+
+                    <div class="your_name">
+                    
+                        <input id="burger-name" type="text" placeholder="Dai un nome al tuo panino">
+                    
+                    </div>
+
+                    <div class="lista_ingredienti">
+
+                        <h3>Ingredienti</h3>
+
+                        <ul class="flex">
+                            <li>
+                                <img src="img/cheese.svg" alt="">
+                                <p>Formaggio</p>
+                                <span>Aggiungi</span>
+                                <input id="formaggio" class="ingred" type="checkbox" data-price="2">
+                            </li>
+                            <li>
+                                <img src="img/fried-egg.svg" alt="">
+                                <p>Uova</p>
+                                <span>Aggiungi</span>
+                                <input id="uova" class="ingred" type="checkbox" data-price="3">
+                            </li>
+                            <li>
+                                <img src="img/mustard.svg" alt="">
+                                <p>Mostarda</p>
+                                <span>Aggiungi</span>
+                                <input id="mostarda" class="ingred" type="checkbox" data-price="4">
+                            </li>
+                            <li>
+                                <img src="img/tomato.svg" alt="">
+                                <p>Pomodoro</p>
+                                <span>Aggiungi</span>
+                                <input id="pomodoro" class="ingred" type="checkbox" data-price="1">
+                            </li>
+                            <li>
+                                <img src="img/lettuce.svg" alt="">
+                                <p>Lattuga</p>
+                                <span>Aggiungi</span>
+                                <input id="lattuga" class="ingred" type="checkbox" data-price="6">
+                            </li>
+                            <li>
+                                <img src="img/ketchup.svg" alt="">
+                                <p>Ketchup</p>
+                                <span>Aggiungi</span>
+                                <input id="maionese" class="ingred" type="checkbox" data-price="1">
+                            </li>
+                        </ul>
+
+                    </div>
+                
+
+                    
+                    
+                    <label for="coupon">Inserisci coupon</label>
+                    <input id="coupon" type="text" placeholder="Coupon">
+                    
+                    <button id="calculate">Calcola prezzo</button>
+                    
+                    <div>
+                    
+                        <span>Prezzo: </span>
+                        <span id="price"></span>
+                        <span> €</span>
+                    
+                    </div>
+
+                </div> <!-- container -->
+                
+            </main>
+
+            <div class="your_price">
+
+
+            </div>
+
+        </div> <!-- total_container -->
+
+    </div> <!-- screen -->
+    
+    <script src=js/script.js></script>
+</body>
+</html>
