@@ -26,7 +26,7 @@ body {
     max-width: 1000px;
     margin: auto;
     border: solid 3px black;
-    border-radius: 3px;    
+    border-radius: 8px;    
 }
 
 .container {
@@ -165,7 +165,7 @@ main {
 /* calcola */
 .calcola button {
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
     padding: 15px;
     font-size: 22px;
     font-weight: bold;
@@ -192,3 +192,12 @@ main {
     height: 120px;
     background-color: orangered;
 }
+
+.your_price span {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+}
+

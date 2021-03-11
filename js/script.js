@@ -11,7 +11,9 @@ for (var i = 0; i < lis.length; i++) {
         //seleziona e deseleziona al click
         var clickedLi = this; //elemento stesso selezionato
         var clickedLiChildrens = clickedLi.children; //figli di li
-        var clickedCheckbox = clickedLiChildrens[4]; //selezione figlio li (input)
+        var clickedCheckbox = clickedLiChildrens[3]; //selezione figlio li (input)
+        console.log(clickedLiChildrens[3]);
+        console.log(clickedCheckbox);
 
         clickedCheckbox.checked = !clickedCheckbox.checked; //deseleziono l'input selezionato 
     });
@@ -31,6 +33,7 @@ priceBtn.addEventListener('click', function() {
     } else {
 
         var finalPrice = 10; // prezzo base
+        //var prezzoFinale = finalPrice;
 
         //gestione checkbox 
         var checkboxs = document.getElementsByClassName('ingred'); //richiamo tutti i .ingred (tutti gli ingredienti)
@@ -42,7 +45,7 @@ priceBtn.addEventListener('click', function() {
             var price = parseInt(checkbox.dataset.price); //prezzo in input (data-price)
 
             if (isChecked) {
-                finalPrice += price; //prezzo + sovrapprezzo
+                finalPrice = finalPrice += price; //prezzo + sovrapprezzo
             }
         }
 
@@ -51,7 +54,9 @@ priceBtn.addEventListener('click', function() {
         var burgerCoupon = document.getElementById('coupon').value; //recupero coupon scritto in html
 
         if (coupons.includes(burgerCoupon)) { //se corrisponde fai lo sconto del 20%
-            finalPrice = finalPrice + .8;
+
+            var sconto = finalPrice  * 0.2;
+            finalPrice = finalPrice - sconto;
         }
 
         var spanPrice = document.getElementById('price');
