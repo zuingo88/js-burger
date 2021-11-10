@@ -7,15 +7,18 @@ for (var i = 0; i < lis.length; i++) {
     var li = lis[i];
 
     li.addEventListener('click', function() {
-        
-        //seleziona e deseleziona al click
-        var clickedLi = this; //elemento stesso selezionato
+
+        var clickedLi = this; //elemento stesso selezionato   
+        //console.log(clickedLi);
         var clickedLiChildrens = clickedLi.children; //figli di li
         var clickedCheckbox = clickedLiChildrens[3]; //selezione figlio li (input)
         console.log(clickedLiChildrens[3]);
         console.log(clickedCheckbox);
 
         clickedCheckbox.checked = !clickedCheckbox.checked; //deseleziono l'input selezionato 
+
+        //seleziona e deseleziona al click
+        
     });
 }
 
